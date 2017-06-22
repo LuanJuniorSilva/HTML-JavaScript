@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<title>Curso de HTML5</title>
+		<meta name="author" content="Luan Jr">
+		<meta name="keywords" content="html5, html , css, css3, Curso de HTML5 e CSS3">
+		<meta name="description" content="Curso completo de HTML5 e CSS3">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="drag" draggable="true" id="pegar" ondragstart="return dragStart(event)">Arrasta-me</div>
+		<div class="drop" id="a" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">Solta-me 1</div>
+		<div class="drop" id="b" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">Solta-me 2</div>
+	</body>
+</html>
