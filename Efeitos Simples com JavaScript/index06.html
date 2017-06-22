@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<title>Menu...</title>
+	<style type="text/css" media="all">
+		div#bloco{
+			border:4px solid black;
+			background-color:white;
+			width:320px;
+			height:200px;
+			
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			
+		}
+		function test(){
+			var formulario = document.getElementById("formulario");
+			var corf = formulario.corfundo.value;
+			var cort = formulario.cortexto.value;
+			
+			var bloco = document.getElementById("bloco");
+			bloco.style.background=corf;
+			bloco.style.color=cort;
+			var tm = formulario.lista.value;
+			bloco.style.fontSize=tm;
+			var ntransition = formulario.ntrans.value;
+			bloco.style.transition=ntransition;
+			
+		}
+		
+	</script>
+</head>
+<body>
+	<form action="index02.html" method="post" id="formulario">
+		Cor de Fundo:
+		<input type="color" name="corfundo" /><br />
+        Cor de Texto:
+        <input type="color" name="cortexto" /><br />
+        Transição:
+        <input type="text" name="ntrans" /><br />
+        Tamanho da cor:
+        <select name="lista">
+        	<option name="20px" value="20px">20px</option>
+            <option name="25px" value="25px">25px</option>
+            <option name="30px" value="30px">30px</option>
+            <option name="35px" value="35px">35px</option>
+            <option name="40px" value="40px">40px</option>
+        </select>
+		<input type="button" onclick="test()" value="Testar ( )" />
+	</form>
+	<div id="bloco">
+	Hello World!
+	</div>
+</body>
+</html>

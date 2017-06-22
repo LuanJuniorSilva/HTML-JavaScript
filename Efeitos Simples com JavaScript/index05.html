@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<title>Menu...</title>
+	<style type="text/css" media="all">
+		h1{
+			text-align:center;
+			border:2px double red;
+		}
+		div#test{
+			border:2px solid blue;
+			width:400px;
+			height:220px;
+			border-radius:5px;
+			-webkit-border-radius:5px;
+		}
+		div#cc{
+			border:3px solid black;
+			display:block;
+			position:absolute;
+			color:red;
+			background-color:black;
+			left:410px;
+			top:180px;
+			cursor:pointer;
+			border-radius:5px;
+		}
+		div#dd{
+			border:3px solid black;
+			display:block;
+			position:absolute;
+			color:red;
+			background-color:black;
+			left:410px;
+			top:180px;
+			cursor:pointer;
+			border-radius:5px;
+			z-index:-1;
+		}
+		p{
+			text-decoration:underline;
+		}
+	</style>
+	<script type="text/javascript">
+		function clicar(){
+			var teste01 = document.getElementById("dd");
+			teste01.style.transition = "all 1s ease-out";
+			teste01.style.transform = "translate(-400px,0px)";
+			teste01.style.zIndex = "1";
+			
+			var teste02 = document.getElementById("cc");
+			teste02.style.transition = "all 1s ease-out";
+			teste02.style.transform = "translate(-400px,0px)";
+			teste02.style.zIndex = "0";
+			
+			var teste03 = document.getElementById("test");
+			teste03.style.transition = "all 1s ease-out";
+			teste03.style.width = "1px";
+			
+				
+		}
+		function clicar02(){
+			var teste001 = document.getElementById("cc");
+			teste001.style.transition = "all 1s ease-out";
+			teste001.style.transform = "translate(0px,0px)";
+			teste001.style.zIndex = "1";
+			
+			teste002 = document.getElementById("dd");
+			teste002.style.transition = "all 1s ease-out"; 
+			teste002.style.transform = "translate(0px,0px)"; 
+			teste002.style.zIndex = "0";
+			
+			var teste003 = document.getElementById("test");
+			teste003.style.transition = "all 1s ease-out";
+			teste003.style.border = "2px solid blue";
+			teste003.style.width = "400px";
+			teste003.style.height = "220px";
+			teste003.style.borderRadius = "5px";
+			
+
+		}
+	</script>
+</head>
+<body>
+		<h1>Hello World!</h1>
+		
+		<div id="test">
+			
+			<p>
+	<marquee>mi nombre es Luan...
+		yo tengo 22 años
+			sou mui aborrido!
+			</marquee>
+			</p>
+			
+		</div>
+		<div id="cc" onclick="clicar()">
+			<code><strong><<</strong></code>
+		</div>
+			<div id="dd" onclick="clicar02()">
+			<code><strong>>></strong></code>
+		</div>
+</body>
+</html>
