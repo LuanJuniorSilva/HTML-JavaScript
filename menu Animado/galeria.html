@@ -1,0 +1,87 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Galeria jQuery </title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var largura, altura, tamanho, distancia;
+		largura = $(window).width();
+		altura = $(window).height();
+		$('#galeria').css({height:altura+'px'});
+		tamanho = $(".mini").width();
+		distancia = tamanho - largura;
+		$('.mini img').mousemove(function(mouse){
+			if(mouse.pageX < distancia +20){
+				$(this).css({left:-mouse.pageX});
+			}
+		});
+		$('.mini img').click(function(){
+			var img = $(this).attr('src');
+			$('.ampliada img').attr('src', img);
+		});
+	});
+
+</script>
+<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		width:2500px;
+		overflow:hidden;
+	}
+	#galeria{
+		width:100%;
+		position:relative;
+	}
+	.ampliada{
+		width:inherit;
+		height:inherit;
+		
+	}
+	.ampliada img{
+		width:inherit;
+		height:inherit;
+	}
+	.mini{
+		position:absolute;
+		bottom:20px;
+		left:0;
+		background:rgba(0,0,0,0.5);
+		padding:10px;
+		
+	}
+	.mini img{
+		width:180px;
+		height:140px;
+		margin:0 20px;
+		float:left;
+		cursor:pointer;
+	}
+</style>
+</head>
+
+<body>
+	<div id="galeria">
+		<div class="ampliada">
+			<img src="galeria/1.jpg" />
+		</div>
+		<div class="mini">
+			<img src="galeria/1.jpg" />
+			<img src="galeria/2.jpg" />
+			<img src="galeria/3.jpg" />
+			<img src="galeria/4.jpg" />
+			<img src="galeria/5.jpg" />
+			<img src="galeria/6.jpg" />
+			<img src="galeria/7.jpg" />
+			<img src="galeria/8.jpg" />
+			<img src="galeria/9.jpg" />
+			<img src="galeria/10.jpg" />
+		</div>
+	</div>
+
+</body>
+</html>

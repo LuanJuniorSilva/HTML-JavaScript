@@ -1,0 +1,99 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	width:5000px;
+	overflow:hidden;
+}
+#menu{
+	width:525px;
+	margin-top:20%;
+	position:fixed;
+}
+#menu ul{
+	list-style:none;
+	font-size:18px;
+	font-family:"Comic Sans MS", cursive;
+}
+#menu li{
+	width:175px;
+	height:70px;
+	float:left;
+	position:relative;
+	background:none rgba(0,0,0,0.7);
+	text-align:center;
+	box-shadow: 0 0 5px #000 inset;
+	-o-box-shadow: 0 0 5px #000 inset;
+	-moz-box-shadow: 0 0 5px #000 inset;
+	-webkit-box-shadow: 0 0 5px #000 inset;
+	-ms-box-shadow: 0 0 5px #000 inset;
+}
+#menu a{
+	color:#FFF;
+	text-transform:capitalize;
+	text-decoration:none;
+	display:block;
+}
+#menu .anime{
+	width:175px;
+	height:50px;
+	padding-top:20px;
+	position:absolute;
+	display:block;
+	z-index:3;
+}
+#menu .texto{
+	position:absolute;
+	top:70px;
+	left:0;
+	display:block;
+	width:175px;
+	height:0px;
+	background:none rgba(0,0,0,0.7);
+	border-radius:0 0 10px 10px;
+	-moz-border-radius:0 0 10px 10px;
+	-o-border-radius:0 0 10px 10px;
+	-webkit-border-radius:0 0 10px 10px;
+	-ms-border-radius:0 0 10px 10px;
+	box-shadow:0 0 5px #000 inset;
+	-o-box-shadow:0 0 5px #000 inset;
+	-moz-box-shadow:0 0 5px #000 inset;
+	-webkit-box-shadow:0 0 5px #000 inset;
+	-ms-box-shadow:0 0 5px #000 inset;
+	z-index:2;
+}
+#menu img{
+	width:0px;
+	height:0px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	z-index:1;
+}
+#home, #portfolio, #contato{
+	width:900px;
+	height:500px;
+	float:left;
+	color:#FFF;
+	line-height:35px;
+	padding:25px;
+	background:none rgba(0,0,0,0.6);
+	text-align:justify;
+}
+#home img{
+	float:left;
+	margin:10px;
+}
+#portfolio img{
+	width:200px;
+	height:160px;
+	float:left;
+	margin:10px;
+}
+#contato{
+	text-align:center;
+}
+
+
+
