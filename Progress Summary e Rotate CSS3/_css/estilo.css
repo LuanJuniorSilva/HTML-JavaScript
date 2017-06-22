@@ -1,0 +1,71 @@
+/*
+progress:not([value]) {
+   width:320px;
+}
+*/
+
+/*
+progress[value] {
+  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+   appearance: none;
+
+  width: 250px;
+  height: 20px;
+}*/
+
+progress[value]::-webkit-progress-bar {
+  background-color: #ff0000;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: #ff0000;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+/* Summary */
+summary::-webkit-details-marker {
+display: none
+}
+summary:after {
+background: red;
+border-radius: 5px;
+content: "+";
+color: #fff;
+float: left;
+font-size: 1.5em;
+font-weight: bold;
+margin: -5px 10px 0 0;
+padding: 0;
+text-align: center;
+width: 20px;
+}
+details[open] summary:after {
+content: "-";
+}
+
+summary::-moz-details-marker {
+display: none
+}
+summary:after {
+background: red;
+border-radius: 5px;
+content: "+";
+color: #fff;
+float: left;
+font-size: 1.5em;
+font-weight: bold;
+margin: -5px 10px 0 0;
+padding: 0;
+text-align: center;
+width: 20px;
+}
+details[open] summary:after {
+content: "-";
+}
+
+

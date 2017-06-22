@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Site Completo</title>
+		
+		<link rel="stylesheet" type="text/css" media="all" href="_css/style.css" />
+		<script type="text/javascript">
+		function rotacao(valor){
+			document.getElementById("borda").style.transform = "rotate(" + valor + "deg)";
+			document.getElementById("borda").style.webkitTransform = "rotate(" + valor + "deg)";
+			document.getElementById("borda").style.mozTransform = "rotate(" + valor + "deg)";
+			document.getElementById("borda").style.msTransform = "rotate(" + valor + "deg)";
+			document.getElementById("borda").style.OTransform = "rotate(" + valor + "deg)";
+			document.getElementById("span1").innerHTML = valor + "deg";
+}
+
+		function movimentox(valor){
+			document.getElementById("borda").style.transform = "translateX(" + valor + "px)";
+			document.getElementById("borda").style.webkitTransform = "translateX(" + valor + "px)";
+			document.getElementById("borda").style.mozTransform = "translateX(" + valor + "px)";
+			document.getElementById("borda").style.msTransform = "translateX(" + valor + "px)";
+			document.getElementById("borda").style.OTransform = "translateX(" + valor + "px)";
+			document.getElementById("span2").innerHTML = valor + "px";
+}
+
+		function movimentoy(valor){
+			document.getElementById("borda").style.transform = "translateY(" + valor + "px)";
+			document.getElementById("borda").style.webkitTransform = "translateY(" + valor + "px)";
+			document.getElementById("borda").style.mozTransform = "translateY(" + valor + "px)";
+			document.getElementById("borda").style.msTransform = "translateY(" + valor + "px)";
+			document.getElementById("borda").style.OTransform = "translateY(" + valor + "px)";
+			document.getElementById("span3").innerHTML = valor + "px";
+}
+		
+		</script>
+	</head>
+	<body>
+		<h1>Trabalhando com Sombras em Textos</h1>
+		<div id="borda">
+			este é p texto da div
+		</div>
+		<div>
+		<input type="range" min="-360" max="360" value="7" onchange="rotacao(this.value)" /><br />
+		Transform rotacao(<span id="span1">7deg</span>)
+		</div>
+		<div>
+		<input type="range" min="-360" max="360" value="7" onchange="movimentox(this.value)" /><br />
+		Transform MovimentoX(<span id="span2">7px</span>)
+		</div>
+		<div>
+		<input type="range" min="-360" max="360" value="7" onchange="movimentoy(this.value)" /><br />
+		Transform MovimentoY(<span id="span3">7px</span>)
+		</div>
+	</body>
+</html>
