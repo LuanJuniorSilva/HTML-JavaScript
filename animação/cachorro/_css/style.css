@@ -1,0 +1,12 @@
+div#container{
+	position:relative;
+	background-image:url("../_imgs/desert.gif");
+	width:700px;
+	height:300px;
+	border:1px solid black;
+}
+#cao{
+	position:absolute;
+	top:170px;
+	left:32px;
+}

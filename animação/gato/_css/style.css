@@ -1,0 +1,9 @@
+body{
+	background-image:url("../_imgs/bedroom2.gif");
+	background-repeat:no-repeat;
+}
+div#container{position:relative;}
+#gato{
+	position:absolute;
+	top:200px;
+}

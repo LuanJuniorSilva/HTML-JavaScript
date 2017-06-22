@@ -1,0 +1,59 @@
+﻿div#mar{
+	width:480px;
+	height:360px;
+	background-image:url("../_imgs/underwater.gif");
+	background-repeat:no-repeat;
+	position:relative;
+}
+img.tub{
+	position:absolute;
+	top:140px;
+	width:100px;
+	z-index:1;
+}
+.fish01,
+.fish02,
+.fish03,
+.fish04,
+.fish05,
+.fish06,
+.fish07,
+.fish08{
+	width:10px;
+	height:10px;
+	border-radius:100%;
+	background-color:red;
+	position:absolute;
+	z-index:0;
+}
+.fish01{
+	left:150px;
+}
+.fish02{
+	left:180px;
+}
+.fish03{
+	left:200px;
+}
+.fish04{
+	left:220px;
+}
+.fish05{
+	left:240px;
+}
+.fish06{
+	left:260px;
+}
+.fish07{
+	left:280px;
+}
+.fish08{
+	left:300px;
+}
+.fish001{
+	width:10px;
+	height:10px;
+	border-radius:100%;
+	background-color:green;
+	position:absolute;
+}

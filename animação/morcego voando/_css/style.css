@@ -1,0 +1,20 @@
+#morcego01{
+	
+	float:left;
+	}
+	
+body{
+	background-image:url("../_imgs/stars.gif");
+}
+}
+#morcego02{
+	
+	float:left;
+	
+	background-image:url("../_imgs/stars.gif");
+}
+#bat02{
+	position:absolute;
+	top:60px;
+	left:990px;
+}

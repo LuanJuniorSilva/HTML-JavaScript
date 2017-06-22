@@ -1,0 +1,196 @@
+
+*{
+	padding:0;
+	margin:0;
+}
+
+/* montando o relogio */
+
+div#relogio{
+	border:4px solid black;
+	width:590px;
+	height:590px;
+	margin-left:30px;
+	margin-top:10px;
+	position:relative;
+	border-radius:100%;
+}
+.relogio001{
+	left:250px;
+	top:30px;
+	width:40px;
+	position:absolute;
+}
+.relogio002{
+	left:280px;
+	top:30px;
+	width:40px;
+	position:absolute;
+}
+.relogio01{
+	left:410px;
+	top:75px;
+	width:40px;
+	position:absolute;
+}
+.relogio02{
+	left:480px;
+	top:160px;
+	width:40px;
+	position:absolute;
+}
+.relogio03{
+	left:520px;
+	top:260px;
+	width:40px;
+	position:absolute;
+}
+.relogio04{
+	left:510px;
+	top:370px;
+	width:40px;
+	position:absolute;
+}
+.relogio05{
+	left:427px;
+	top:470px;
+	width:40px;
+	position:absolute;
+}
+.relogio06{
+	left:277px;
+	top:530px;
+	width:40px;
+	position:absolute;
+}
+.relogio07{
+	left:145px;
+	top:475px;
+	width:40px;
+	position:absolute;
+}
+.relogio08{
+	left:51px;
+	top:380px;
+	width:40px;
+	position:absolute;
+}
+.relogio09{
+	left:21px;
+	top:265px;
+	width:40px;
+	position:absolute;
+}
+.relogio0001{
+	left:36px;
+	top:160px;
+	width:40px;
+	position:absolute;
+}
+.relogio00{
+	left:65px;
+	top:160px;
+	width:40px;
+	position:absolute;
+}
+.relogio011a{
+	left:100px;
+	top:80px;
+	width:40px;
+	position:absolute;
+}
+.relogio011b{
+	left:124px;
+	top:80px;
+	width:40px;
+	position:absolute;
+}
+/* Ponteiro do Relogio  */
+#clock{
+	position:relative;
+}
+
+.s{
+	width:580px;
+}
+.m{
+	width:500px;
+	margin-left:65px;
+	margin-top:10px;
+}
+.h{
+	width:490px;
+	left:-50px;
+	position:relative;
+	top:-40px;
+}
+
+#hours{
+	border:1px solid black;
+	width:140px;
+	text-align:center;
+	font-size:30px;
+	
+	background-color:blue;
+	cursor:pointer;
+	position:absolute;
+	left:490px;
+	
+}
+a{
+	color:red;
+	text-decoration:none;
+	}
+	/* ----------------------------------------------------- */
+	
+
+#clock div {
+    position: absolute;
+}
+/* -------------------------------------------------------------- */
+	
+#clock  img[src*='second'] {
+    -webkit-transition: -webkit-transform 600000s linear;
+    -moz-transition: -moz-transform 600000s linear;
+    -o-transition: -o-transform 600000s linear;
+    -ms-transition: -ms-transform 600000s linear;
+    transition: transform 600000s linear;
+}
+#clock:target img[src*='second'] {
+    -webkit-transform: rotate(3600000deg);
+    -moz-transform: rotate(3600000deg);
+    -o-transform: rotate(3600000deg);
+    -ms-transform: rotate(3600000deg);
+    transform: rotate(3600000deg);
+}
+#clock img[src*='minute'] {
+    -webkit-transition: -webkit-transform 360000s linear;
+    -moz-transition: -moz-transform 360000s linear;
+    -o-transition: -o-transform 360000s linear;
+    -ms-transition: -ms-transform 360000s linear;
+    transition: transform 360000s linear;
+}
+
+#clock:target img[src*='minute'] {
+    -webkit-transform: rotate(36000deg);
+    -moz-transform: rotate(36000deg);
+    -o-transform: rotate(36000deg);
+    -ms-transform: rotate(36000deg);
+    transform: rotate(36000deg);
+}
+
+#clock img[src*='hour'] {
+    -webkit-transition: -webkit-transform 216000s linear;
+    -moz-transition: -moz-transform 216000s linear;
+    -o-transition: -o-transform 216000s linear;
+    -ms-transition: -ms-transform 216000s linear;
+    transition: transform 216000s linear;
+}
+
+#clock:target img[src*='hour'] {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}	
