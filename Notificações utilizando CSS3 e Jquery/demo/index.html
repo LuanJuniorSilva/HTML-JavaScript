@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title></title>
+    <link href="../plugin/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="../plugin/ttw-simple-notifications-min.js"></script>
+
+    <style type="text/css">
+    
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var notifications = $('body').ttwSimpleNotifications(),
+            msgs = [
+                'Baixe diversas apostilas no luan-junior.esy.es',
+                'Tenha um forum personalizado apenas com temas do seu curso',
+                'Descubra quem gosta das mesmas coisas que voce',
+                'Aprenda a cada dia com o site'
+            ];
+
+            notifications.show({msg:'Nos ajude enviando um e-mail com sugestoes: luan.juniorght7@gmail.com', autoHideDelay:6000});
+
+            setTimeout(function() {
+                notifications.show({msg:'Acesse o melhor site de tutoriais da internet', icon:'images/icon.png'});
+            }, 13000);
+
+            setTimeout(function() {
+                notifications.show({msg:'Qual o melhor site para estudo? <a href="" target="_blank">luan-junior.esy.es</a> diversas apostilas e forum personalizado.', icon:'images/icon.png', autoHide:false});
+
+                setTimeout(function() {
+                    notifications.show({msg:'Obrigado por escolher nosso site <a href="luan-junior.esy.es" target="_blank">LuanSilva</a>', icon:'images/icon.png', autoHide:false});
+
+                }, 5000);
+            }, 2000);
+
+            var i = 0;
+            setInterval(function(){
+                notifications.show({msg:msgs[i], icon:'images/icon.png'});
+                i++;
+
+                if(i >= msgs.length)
+                    i=0;
+            }, 8000);
+        });
+    </script>
+</head>
+<body>
+
+<!-- Seu site aqui yeeba.me -->
+
+</body>
+</html>
